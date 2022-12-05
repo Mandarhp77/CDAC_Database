@@ -139,7 +139,7 @@ db.rest.find({'grades.score':{$lte:10}},{restaurant_id:1,name:1,borough:1,cuisin
 restaurants which prepared dish except 'American' and 'Chinees' or restaurant's name begins 
 with letter 'Wil'. 
 
-db.rest.find({$and:[{cuisine:{$nin:['American','Chinees']}},{name:/^Wil.*/}]}).pretty();
+db.rest.find({$or:[{cuisine:{$nin:['American','Chinees']}},{name:/^Wil.*/}]}).pretty();
 
 ************************************ 22 *****************************************
 22. Write a MongoDB query to find the restaurant Id, name, and grades for those restaurants 
