@@ -62,7 +62,7 @@ name:Varun  subject:[English,Sanskrit]
 
 db.student.insertMany([{name:'Kunal', subject:['English','Hindi','French']},
                        {name:'Suraj', subject:['Physics','Chemistry','Electronics']},
-					   {name:'Varun', subject:['English','Sanskrit']}]);
+		       {name:'Varun', subject:['English','Sanskrit']}]);
 			
 ****************************** 11 ***************************************			
 11.Display first 3 documents
